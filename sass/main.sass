@@ -1,16 +1,123 @@
-.home
+$default-font: 'Roboto', sans-serif
+
+body
+	font-family: $default-font !important
+
+.bg-home
 	background-image: url("../img/bg-topo.jpg")
 	width: 100%
-	height: 100%
+	height: 110%
 	position: absolute
 	background-size: cover
+	top: 0
 
 nav
+	transition: all ease 0.2s
 	&.top-bar
 		background: rgba(0, 0, 0, 0)
+		z-index: 99
+		.title-area
+			.name
+				img
+					width: 190px
+		.top-bar-section ul.right 
+			li, a
+				background: rgba(0, 0, 0, 0)
+			a
+				transition: all ease 0.2s
+				font-size: 12px
+				color: rgba(255, 255, 255, 0.7)
+				text-transform: uppercase
+				&:hover
+					background: none
+					color: #4EF7E8
+			li.active a
+				font-weight: bold
+				background: transparent
+				&:hover
+					background: none
+		&.expanded
+			.top-bar-section
+				ul.right li
+					text-align: center
+					&:hover
+						background: #333
+					a
+						background: #333
+						font-family: 'Roboto', sans-serif
+						font-weight: 300
+						font-size: 12px
+					&.active a
+						background: #18B2A6
+						font-weight: normal
+					&:hover
+						background: #333
 
 .row 
+	max-width: 80rem
 	.full-width 
 		width: 100%
 		max-width: 100%
 
+#home
+	width: 100%
+	height: 100%
+	top: 0
+	text-align: center
+	color: #FFF
+	div
+		position: absolute
+		margin: 0 auto
+		width: 100%
+		top: 50%
+		transform: translateY(-50%)
+		-webkit-transform: translateY(-50%)
+		padding: 20px
+		h1
+			color: #FFF
+			letter-spacing: -1px
+			font-weight: bold
+			@media only screen and (min-width: 64.063em)
+				font-size: 6vw
+			@media only screen  and (min-width : 1824px)
+				font-size: 120px
+		p
+			font-weight: 300
+			@media only screen  and (min-width : 1024px)
+				font-size: 2vw
+			@media only screen and (min-width: 120.063em)
+				font-size: 40px
+		.button
+			background: transparent
+			border: 1px solid #FFF
+			border-radius: 5px
+			padding: 10px 40px
+			font-family: $default-font
+			&:hover
+				background:	#FFF
+				color: #18b2a6
+
+#quemsomos
+	background-color: #E8E8E8
+	color: #004742
+	position: relative
+	padding: 50px 0
+	h1
+		text-align: center
+		font-weight: 100
+		text-transform: uppercase
+		letter-spacing: -2px
+		font-family: "Roboto", sans-serif
+	svg
+		margin: 0 auto
+		width: 100%
+		margin-top: -30px
+		margin-bottom: 30px
+		path
+			fill: #009388
+
+	p
+		font-weight: 300
+		font-family: "Roboto", sans-serif
+		text-align: justify
+		font-size: 12px
