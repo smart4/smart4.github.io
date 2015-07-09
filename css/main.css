@@ -1,4 +1,4 @@
-body {
+body, h1, h2, h3, h4, h5, h6, p, span, a {
   font-family: "Roboto", sans-serif !important; }
 
 .bg-home {
@@ -52,6 +52,20 @@ nav {
     width: 100%;
     max-width: 100%; }
 
+.svg-title {
+  margin: 0 auto;
+  width: 100%;
+  margin-top: -30px;
+  margin-bottom: 30px; }
+
+section h1 {
+  font-size: 80px;
+  letter-spacing: -4px; }
+  @media only screen and (max-width: 40em) {
+    section h1 {
+      font-size: 40px;
+      letter-spacing: -2px; } }
+
 #home {
   width: 100%;
   height: 100%;
@@ -73,12 +87,12 @@ nav {
       @media only screen and (min-width: 64.063em) {
         #home div h1 {
           font-size: 6vw; } }
-      @media only screen and (min-width: 1824px) {
+      @media only screen and (min-width: 120.063em) {
         #home div h1 {
           font-size: 120px; } }
     #home div p {
       font-weight: 300; }
-      @media only screen and (min-width: 1024px) {
+      @media only screen and (min-width: 64.063em) {
         #home div p {
           font-size: 2vw; } }
       @media only screen and (min-width: 120.063em) {
@@ -88,34 +102,96 @@ nav {
       background: transparent;
       border: 1px solid #FFF;
       border-radius: 5px;
-      padding: 10px 40px;
-      font-family: "Roboto", sans-serif; }
+      padding: 10px 40px; }
       #home div .button:hover {
         background: #FFF;
         color: #18b2a6; }
 
 #quemsomos {
-  background-color: #E8E8E8;
-  color: #004742;
+  background-color: #FFF;
+  color: #00B1A4;
   position: relative;
   padding: 50px 0; }
   #quemsomos h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #00AEA1; }
+  #quemsomos .svg-title path {
+    fill: #009388; }
+  #quemsomos p {
+    font-weight: 300;
+    text-align: justify;
+    font-size: 14px; }
+  #quemsomos .row h2 {
     text-align: center;
     font-weight: 100;
     text-transform: uppercase;
     letter-spacing: -2px;
-    font-family: "Roboto", sans-serif; }
-  #quemsomos svg {
-    margin: 0 auto;
-    width: 100%;
-    margin-top: -30px;
-    margin-bottom: 30px; }
-    #quemsomos svg path {
-      fill: #009388; }
-  #quemsomos p {
+    color: #00C39E;
+    font-size: 2.5em;
+    padding: 10px 0; }
+
+#oquefazemos {
+  background-color: #F7F7F7;
+  color: #909090;
+  padding: 50px 0; }
+  #oquefazemos h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #909090; }
+  #oquefazemos .svg-title path {
+    fill: #30E8DB; }
+  #oquefazemos p {
     font-weight: 300;
-    font-family: "Roboto", sans-serif;
     text-align: justify;
-    font-size: 12px; }
+    font-size: 14px; }
+  #oquefazemos .ferramentas .ico {
+    width: 200px;
+    height: 200px;
+    background: #F8FFFF;
+    margin: 10px auto;
+    border: 5px solid rgba(95, 97, 97, 0.15);
+    border-radius: 50%; }
+  #oquefazemos .ferramentas span {
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    font-weight: 100;
+    color: #909090;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: -10px; }
+  #oquefazemos h2 {
+    font-weight: 100;
+    margin: 40px 0;
+    text-align: center;
+    color: #00B1A4; }
+  #oquefazemos .sistemas a {
+    color: #A7ABAB;
+    font-weight: 300;
+    width: 150px;
+    height: 30px;
+    background: #21C5B9;
+    border-bottom: 2px solid #00AEA2;
+    border-radius: 2px;
+    transition: all ease 0.2s;
+    margin: 10px auto;
+    display: block; }
+    #oquefazemos .sistemas a:hover {
+      border-width: 5px; }
+
+#contato {
+  height: 100%; }
+  #contato .contato-info {
+    width: 100%;
+    height: 300px;
+    background: #333; }
+  #contato #map {
+    height: 100%;
+    margin: 0;
+    padding: 0; }
+    @media only screen and (max-width: 40em) {
+      #contato #map {
+        height: 50%; } }
 
 /*# sourceMappingURL=main.css.map */
