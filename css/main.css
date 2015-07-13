@@ -12,10 +12,15 @@ body, h1, h2, h3, h4, h5, h6, p, span, a {
 nav {
   transition: all ease 0.2s; }
   nav.top-bar {
-    background: transparent;
+    background: rgba(0, 0, 0, 0.8);
     z-index: 99;
+    height: 4rem;
+    padding: 10px 50px;
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.43); }
+    width: 100%; }
+    @media only screen and (max-width: 40em) {
+      nav.top-bar {
+        padding: 10px 10px; } }
     nav.top-bar .title-area .name img {
       width: 190px; }
     nav.top-bar .top-bar-section ul.right li, nav.top-bar .top-bar-section ul.right a {
