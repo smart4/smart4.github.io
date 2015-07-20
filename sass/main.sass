@@ -142,22 +142,28 @@ section
 		font-weight: 300
 		text-align: justify
 		font-size: 14px
-	.row h2
-		text-align: center
-		font-weight: 100
-		text-transform: uppercase
-		letter-spacing: -2px
-		color: #00C39E
-		font-size: 2.5em
-		padding: 10px 0
+	.row 
+		h2
+			text-align: center
+			font-weight: 100
+			text-transform: uppercase
+			letter-spacing: -2px
+			color: #00C39E
+			font-size: 2.5em
+			padding: 10px 0
+		h3
+			font-size: 25px
+			letter-spacing: -1px
+			font-weight: 100
+			text-align: center
 
 #oquefazemos
 	padding: 30px 0
-	color: #909090
+	color: #333
 	h1
 		font-weight: bold
 		text-transform: uppercase
-		color: #909090
+		color: #333
 	.svg-title path
 		fill: #30E8DB
 	p
@@ -171,8 +177,9 @@ section
 			height: 200px
 			background: #F8FFFF
 			margin: 10px auto
-			border: 5px solid rgba(95, 97, 97, 0.15)
+			border: 1px solid rgba(61, 231, 231, 1)
 			border-radius: 50%
+			transition: all 0.3s
 		span
 			text-align: center
 			display: block
@@ -181,28 +188,39 @@ section
 			color: #909090
 			text-transform: uppercase
 			margin-bottom: 20px
-			margin-top: -10px
+			margin-top: 20px
+			transition: all 0.3s
 
+		&:hover
+			.ico
+				border-color: rgba(61, 231, 179, 1)
+			span
+				color: #333
 	h2
 		font-weight: 100
 		margin: 40px 0
 		text-align: center
 		color: #00B1A4
 	.sistemas
-		a
-			color: #A7ABAB
-			font-weight: 300
-			width: 150px
-			height: 30px
-			background: #21C5B9
-			border-bottom: 2px solid #00AEA2
-			border-radius: 2px
-			transition: all ease .2s
-			margin: 10px auto
-			display: block
-			&:hover
-				border-width: 5px
-
+		padding: 30px 0
+		.sistemas-ico
+			width: 100px
+			height: 100px
+			background:	#333
+			margin: 10% auto
+		.sistemas-info
+			&.left
+				text-align: left
+			&.right
+				text-align: right
+			font-weight: 100
+			h3
+				font-weight: 100
+			ul
+				margin: 0
+				li
+					list-style: none
+		
 #contato
 	height: 100%
 	padding: 30px 0

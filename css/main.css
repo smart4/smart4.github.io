@@ -145,14 +145,19 @@ section h1 {
     color: #00C39E;
     font-size: 2.5em;
     padding: 10px 0; }
+  #quemsomos .row h3 {
+    font-size: 25px;
+    letter-spacing: -1px;
+    font-weight: 100;
+    text-align: center; }
 
 #oquefazemos {
   padding: 30px 0;
-  color: #909090; }
+  color: #333; }
   #oquefazemos h1 {
     font-weight: bold;
     text-transform: uppercase;
-    color: #909090; }
+    color: #333; }
   #oquefazemos .svg-title path {
     fill: #30E8DB; }
   #oquefazemos p {
@@ -164,8 +169,9 @@ section h1 {
     height: 200px;
     background: #F8FFFF;
     margin: 10px auto;
-    border: 5px solid rgba(95, 97, 97, 0.15);
-    border-radius: 50%; }
+    border: 1px solid #3de7e7;
+    border-radius: 50%;
+    transition: all 0.3s; }
   #oquefazemos .ferramentas span {
     text-align: center;
     display: block;
@@ -174,25 +180,36 @@ section h1 {
     color: #909090;
     text-transform: uppercase;
     margin-bottom: 20px;
-    margin-top: -10px; }
+    margin-top: 20px;
+    transition: all 0.3s; }
+  #oquefazemos .ferramentas:hover .ico {
+    border-color: #3de7b3; }
+  #oquefazemos .ferramentas:hover span {
+    color: #333; }
   #oquefazemos h2 {
     font-weight: 100;
     margin: 40px 0;
     text-align: center;
     color: #00B1A4; }
-  #oquefazemos .sistemas a {
-    color: #A7ABAB;
-    font-weight: 300;
-    width: 150px;
-    height: 30px;
-    background: #21C5B9;
-    border-bottom: 2px solid #00AEA2;
-    border-radius: 2px;
-    transition: all ease 0.2s;
-    margin: 10px auto;
-    display: block; }
-    #oquefazemos .sistemas a:hover {
-      border-width: 5px; }
+  #oquefazemos .sistemas {
+    padding: 30px 0; }
+    #oquefazemos .sistemas .sistemas-ico {
+      width: 100px;
+      height: 100px;
+      background: #333;
+      margin: 10% auto; }
+    #oquefazemos .sistemas .sistemas-info {
+      font-weight: 100; }
+      #oquefazemos .sistemas .sistemas-info.left {
+        text-align: left; }
+      #oquefazemos .sistemas .sistemas-info.right {
+        text-align: right; }
+      #oquefazemos .sistemas .sistemas-info h3 {
+        font-weight: 100; }
+      #oquefazemos .sistemas .sistemas-info ul {
+        margin: 0; }
+        #oquefazemos .sistemas .sistemas-info ul li {
+          list-style: none; }
 
 #contato {
   height: 100%;
