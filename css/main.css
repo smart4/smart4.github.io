@@ -153,7 +153,7 @@ section h1 {
 
 #oquefazemos {
   padding: 30px 0;
-  color: #333; }
+  color: #9D9D9D; }
   #oquefazemos h1 {
     font-weight: bold;
     text-transform: uppercase;
@@ -194,18 +194,28 @@ section h1 {
   #oquefazemos .sistemas {
     padding: 30px 0; }
     #oquefazemos .sistemas .sistemas-ico {
-      width: 100px;
-      height: 100px;
-      background: #333;
-      margin: 10% auto; }
+      width: 130px;
+      height: 110px;
+      margin: 0 auto;
+      background-size: 150px; }
+      #oquefazemos .sistemas .sistemas-ico.ico-adm {
+        background-image: url("../img/adm.png"); }
+      #oquefazemos .sistemas .sistemas-ico.ico-fiscal {
+        background-image: url("../img/fiscal.png"); }
+      #oquefazemos .sistemas .sistemas-ico.ico-educacional {
+        background-image: url("../img/educacional.png"); }
+      #oquefazemos .sistemas .sistemas-ico.ico-social {
+        background-image: url("../img/social.png"); }
     #oquefazemos .sistemas .sistemas-info {
-      font-weight: 100; }
-      #oquefazemos .sistemas .sistemas-info.left {
-        text-align: left; }
-      #oquefazemos .sistemas .sistemas-info.right {
-        text-align: right; }
+      font-weight: 300;
+      text-align: center;
+      margin-bottom: 40px; }
       #oquefazemos .sistemas .sistemas-info h3 {
-        font-weight: 100; }
+        font-weight: bold;
+        color: #1DBEB3;
+        transition: all ease 0.2s; }
+      #oquefazemos .sistemas .sistemas-info:hover h3 {
+        color: #79E4AA; }
       #oquefazemos .sistemas .sistemas-info ul {
         margin: 0; }
         #oquefazemos .sistemas .sistemas-info ul li {

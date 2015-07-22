@@ -159,7 +159,7 @@ section
 
 #oquefazemos
 	padding: 30px 0
-	color: #333
+	color: #9D9D9D
 	h1
 		font-weight: bold
 		text-transform: uppercase
@@ -204,18 +204,29 @@ section
 	.sistemas
 		padding: 30px 0
 		.sistemas-ico
-			width: 100px
-			height: 100px
-			background:	#333
-			margin: 10% auto
+			width: 130px
+			height: 110px
+			margin: 0 auto
+			background-size: 150px
+			&.ico-adm
+				background-image: url("../img/adm.png")
+			&.ico-fiscal
+				background-image: url("../img/fiscal.png")
+			&.ico-educacional
+				background-image: url("../img/educacional.png")
+			&.ico-social
+				background-image: url("../img/social.png")
 		.sistemas-info
-			&.left
-				text-align: left
-			&.right
-				text-align: right
-			font-weight: 100
+			font-weight: 300
+			text-align: center
+			margin-bottom: 40px
 			h3
-				font-weight: 100
+				font-weight: bold
+				color: $default-color
+				transition: $default-transition
+			&:hover
+				h3
+					color: #79E4AA
 			ul
 				margin: 0
 				li
