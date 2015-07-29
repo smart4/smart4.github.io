@@ -156,6 +156,13 @@ section
 			letter-spacing: -1px
 			font-weight: 100
 			text-align: center
+		blockquote
+			background-color: rgba(255, 255, 255, 0.4)
+			border-color: #26C0B5
+			padding: 20px
+			font-size: 12px
+			p
+				text-align: center
 
 #oquefazemos
 	padding: 30px 0
@@ -175,11 +182,15 @@ section
 		.ico
 			width: 200px
 			height: 200px
-			background: #F8FFFF
+			background: $default-color
 			margin: 10px auto
-			border: 1px solid rgba(61, 231, 231, 1)
 			border-radius: 50%
+			overflow: hidden
 			transition: all 0.3s
+			img
+				margin: 45px 0 0 45px
+				width: 180px
+				height: 180px
 		span
 			text-align: center
 			display: block
